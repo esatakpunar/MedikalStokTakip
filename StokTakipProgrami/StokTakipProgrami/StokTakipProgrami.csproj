@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0B14FF5A-BA39-4724-99FC-8A127D9315F6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>StokTakipProgrami</RootNamespace>
+    <AssemblyName>StokTakipProgrami</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmGirisPaneli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGirisPaneli.Designer.cs">
+      <DependentUpon>frmGirisPaneli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSatisGrafik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSatisGrafik.Designer.cs">
+      <DependentUpon>frmSatisGrafik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSatisListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSatisListele.Designer.cs">
+      <DependentUpon>frmSatisListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSatisRaporla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSatisRaporla.Designer.cs">
+      <DependentUpon>frmSatisRaporla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSatisSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSatisSayfasi.Designer.cs">
+      <DependentUpon>frmSatisSayfasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKategori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKategori.Designer.cs">
+      <DependentUpon>frmKategori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMarka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMarka.Designer.cs">
+      <DependentUpon>frmMarka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMusteriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMusteriEkle.Designer.cs">
+      <DependentUpon>frmMusteriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMusteriListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMusteriListele.Designer.cs">
+      <DependentUpon>frmMusteriListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUrunEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUrunEkle.Designer.cs">
+      <DependentUpon>frmUrunEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUrunGrafik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUrunGrafik.Designer.cs">
+      <DependentUpon>frmUrunGrafik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUrunListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUrunListele.Designer.cs">
+      <DependentUpon>frmUrunListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUrunRaporla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUrunRaporla.Designer.cs">
+      <DependentUpon>frmUrunRaporla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Stok_TakipDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Stok_TakipDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Stok_TakipDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Stok_TakipDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Stok_TakipDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Stok_TakipDataSet2.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmGirisPaneli.resx">
+      <DependentUpon>frmGirisPaneli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSatisGrafik.resx">
+      <DependentUpon>frmSatisGrafik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSatisListele.resx">
+      <DependentUpon>frmSatisListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSatisRaporla.resx">
+      <DependentUpon>frmSatisRaporla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSatisSayfasi.resx">
+      <DependentUpon>frmSatisSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKategori.resx">
+      <DependentUpon>frmKategori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMarka.resx">
+      <DependentUpon>frmMarka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMusteriEkle.resx">
+      <DependentUpon>frmMusteriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMusteriListele.resx">
+      <DependentUpon>frmMusteriListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUrunEkle.resx">
+      <DependentUpon>frmUrunEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUrunGrafik.resx">
+      <DependentUpon>frmUrunGrafik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUrunListele.resx">
+      <DependentUpon>frmUrunListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUrunRaporla.resx">
+      <DependentUpon>frmUrunRaporla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Stok_TakipDataSet.xsc">
+      <DependentUpon>Stok_TakipDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Stok_TakipDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Stok_TakipDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Stok_TakipDataSet.xss">
+      <DependentUpon>Stok_TakipDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Stok_TakipDataSet1.xsc">
+      <DependentUpon>Stok_TakipDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Stok_TakipDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Stok_TakipDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Stok_TakipDataSet1.xss">
+      <DependentUpon>Stok_TakipDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Stok_TakipDataSet2.xsc">
+      <DependentUpon>Stok_TakipDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Stok_TakipDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Stok_TakipDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Stok_TakipDataSet2.xss">
+      <DependentUpon>Stok_TakipDataSet2.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
